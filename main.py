@@ -34,7 +34,7 @@ Radiumhvh = """  _____           _ _                 _          _
 
 print(Radiumhvh)
 print("Made by Radiumhvh.")
-print("Made by Radiumhvh.")
+print("this software is protected by the AGPL-3.0 License")
 async def start_bot(token, index):
     bot = commands.Bot(command_prefix='!')
     @bot.event
@@ -54,13 +54,13 @@ async def start_bot(token, index):
 
     @bot.command()
     async def Massjoin(ctx, channel_id: int, source: str):
-        logging.info("[+] Trying to Join VC....")
+        logging.info("[+] Trying to Join VC")
         os.system('clear')
         print(Radiumhvh)
         print(f"tokens: {len(tokens)}")
 
         if token == config['BotTokens'].get(f'token{index}'):
-            logging.info("[+] Token passed.")
+            logging.info("[+] Token passed")
             channel = bot.get_channel(channel_id)
 
             if channel and isinstance(channel, discord.VoiceChannel):
@@ -105,7 +105,7 @@ async def start_bot(token, index):
                 logging.warning("[-] Invalid voice channel")
 
         else:
-            logging.error("[-] Incorrect bot token.")
+            logging.error("Error")
 
     @bot.command()
     async def disconnectall(ctx):
@@ -164,9 +164,9 @@ async def start_bot(token, index):
 
         try:
             voice_channel = await channel.connect()
-            print(f"[+] Connected To VC")
+            print(f"[+] Connected to vc")
 
-            print(f"[+] Disconnecting From VC")
+            print(f"[+] Disconnecting from vc")
             await voice_channel.disconnect()
 
             await asyncio.sleep(1)
