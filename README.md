@@ -24,8 +24,8 @@ A Discord self bot that can join vc spam audio and youtube audio throught the to
 
 ```cfg
 [BotTokens]
-token1 = YOUR_DISCORD_TOKEN_1
-token2 = YOUR_DISCORD_TOKEN_2
+token1 = {token here}
+token2 = {token here}
 # Add more tokens if u have e.g., token3 = {token here}
 
 ```
