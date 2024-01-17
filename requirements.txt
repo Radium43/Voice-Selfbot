@@ -1,0 +1,7 @@
+configparser==5.0.2
+asyncio==3.4.3
+aiohttp==3.9.1
+numpy
+opencv-python
+pytube
+discord.py-self[voice]==1.7.3
